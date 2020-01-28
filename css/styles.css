@@ -27,7 +27,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 #title {
   background-color: #ff4c68;
@@ -64,12 +64,16 @@ p {
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* features section */
 
 #features {
+  background-color: white;
   padding: 7% 15%;
+  position: relative;
 }
 
 .feature-box {
@@ -83,14 +87,13 @@ p {
 }
 
 .icon:hover {
-  color: #ff4c88;
+  color: #ff4c68;
 }
 
 
 /* Testimonials section */
 
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #ef8172;
   color: white;
@@ -100,6 +103,10 @@ p {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 
@@ -113,4 +120,50 @@ p {
 .press-img {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+
+/* pricing section */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+/* cta section */
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-header {
+  font-family: 'Montserrat';
+  font-weight: 700;  /* Montserrat-Bold */
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* footer section */
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.footer-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px){
+  #title {
+    text-align: center;
+  }
+  .title-img{
+    position: static;
+    transform: rotate(0);
+  }
 }
